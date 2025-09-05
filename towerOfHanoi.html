@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tower of Hanoi Scaffold</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    #app {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 600px;
+      height: 300px;
+      position: relative;
+    }
+
+    /* Towers */
+    .tower {
+      flex: 1;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    .rod {
+      width: 10px;
+      height: 200px;
+      background: #444;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+      border-radius: 5px;
+    }
+
+    /* Disks */
+    .disk {
+      height: 25px;
+      margin: 3px 0;
+      border-radius: 5px;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    .disk:hover {
+      cursor: pointer;
+    }
+
+    .disk-1 {
+      width: 80px;
+      background: #e74c3c;
+    }
+
+    .disk-2 {
+      width: 120px;
+      background: #3498db;
+    }
+
+    .disk-3 {
+      width: 160px;
+      background: #2ecc71;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    
+    <div id="tower-1" class="tower">
+      <div class="rod"></div>
+      <div class="disk disk-3"></div>
+      <div class="disk disk-2"></div>
+      <div class="disk disk-1"></div>
+    </div>
+
+    <div id="tower-2" class="tower">
+      <div class="rod"></div>
+    </div>
+
+    <div id="tower-3" class="tower">
+      <div class="rod"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>
