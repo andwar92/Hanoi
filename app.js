@@ -1,5 +1,5 @@
 const app = document.getElementById('app');
-
+let tower2 = '';
 updateView();
 function updateView() {
     app.innerHTML = /*HTML*/` 
@@ -7,9 +7,9 @@ function updateView() {
       <div class="rod"></div>
       <div class="disk disk-3"></div>
       <div class="disk disk-2"></div>
-      <div class="disk disk-1"></div>
+      <div onclick="moveDisc()" class="disk disk-1"></div>
     </div>
-
+      
     <div id="tower-2" class="tower">
       <div class="rod"></div>
     </div>
@@ -19,4 +19,9 @@ function updateView() {
     </div>
 
     `;
+};
+
+function moveDisc(){
+  document.getElementById('app').innerHTML += 
+  tower2 = ` <div onclick="moveDisc()" class="disk disk-1"></div>`;
 };
