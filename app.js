@@ -1,7 +1,7 @@
 const app = document.getElementById('app');
 
 updateView();
-function updateView(){
+function updateView() {
     app.innerHTML = /*HTML*/` 
     <div id="tower-1" class="tower">
       <div class="rod"></div>
